@@ -2,3 +2,4 @@
 bcnames.py
 *.pyc
 Makefile
+bin

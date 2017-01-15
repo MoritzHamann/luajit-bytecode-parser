@@ -1,0 +1,8 @@
+CC = clang
+LUA_SRC = /path/to/LuaJIT/installation/src
+LJ_BC = $(LUA_SRC)/lj_bc.o
+OUT = bin
+
+all:
+	mkdir -p $(OUT)
+	$(CC) -Wall -I$(LUA_SRC) $(LJ_BC) extract_bcinfo.c -o $(OUT)/extract_bcinfo
